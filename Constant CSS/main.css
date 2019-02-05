@@ -1,0 +1,266 @@
+/* font family */
+body{
+  font-family:'Lato', sans-serif;
+}
+/* font family */
+
+
+
+
+/* font weight (bolder) */
+label{
+  font-weight: bolder;
+}
+.labelfont>label{
+  font-size: 1.5rem;
+}
+/* font weight (bolder) */
+
+
+
+
+
+/* Main container of the form */
+.formeo{
+        display:block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 70%;
+        border-radius: 10px;
+      }
+/* Main container of the form */
+
+
+
+
+
+
+/* Submit button success/danger override */
+.formio-component-submit,.submit-success::after,.submit-fail::after{
+  content: "" !important;
+}
+.btn-success:after,.btn-danger:after {
+  height: auto !important;
+}
+/* Submit button success/danger override */
+
+
+
+
+
+
+ /*
+Alert CSS override
+*/
+     
+.alert-danger {
+    border: 1px solid red !important;
+    background-color: transparent !important;
+}
+.alert, .alert h1, .alert h2, .alert h3, .alert h4, .alert h5, .alert h6 ,.has-error ,.alert-danger,.control-label,.help-block {
+     color: #000 !important;
+
+}
+.alert {
+    position: relative !important;
+    padding: 2% 1% 2% 2% !important;
+    margin-bottom: 1% !important;
+    border-radius: 0.25rem !important;
+}
+ div .has-error .form-control, .has-error input.form-control[readonly], 
+ .has-error input[type=text][readonly], .has-error [type=text].form-control[readonly], 
+ .has-error .form-control:focus{
+    border: 2.5px solid #e51c23 !important;
+ }
+
+/*
+Alert CSS override
+*/
+
+
+
+
+
+/* input text-align classes */
+.textright input[type=text]{
+    text-align:right; 
+}
+.textcenter input[type=text]{
+    text-align:center; 
+}
+/* input text-align classes */
+
+
+
+
+
+
+
+
+/* calender overriding the "!important" of text_input override */
+ div .numInputWrapper input[type=text]{
+    border:0 !important; 
+    padding:0 0 0 .5ch !important;
+    border-radius: 0 !important;
+ }
+/* calender overriding the "!important" of text_input override */ 
+
+
+
+
+
+
+
+
+
+/* custome text field input style override */
+div .form-group textarea, div .form-group textarea.form-control{
+    border-radius: 0.5% !important;
+ }
+
+ div .form-group .choices[data-type*=select-one] .choices__input{
+   border-radius: 0 !important;
+ }
+ 
+input.form-control, input[type=text], 
+input[type=password], input[type=email], 
+input[type=number], [type=text].form-control,
+ [type=password].form-control, [type=email].form-control, 
+ [type=tel].form-control, [contenteditable].form-control{
+  box-shadow: none !important;
+  border: 1px solid #ddd !important;
+  padding: 10px 15px !important;
+  border-radius: 60px !important;
+  line-height:12px !important;
+  transition: all .15s ease-in-out !important;
+ }
+ 
+textarea:focus, textarea.form-control:focus, 
+input.form-control:focus, input[type=text]:focus, 
+input[type=password]:focus, input[type=email]:focus, 
+input[type=number]:focus, [type=text].form-control:focus,
+ [type=password].form-control:focus, [type=email].form-control:focus, 
+ [type=tel].form-control:focus, [contenteditable].form-control:focus{
+   border: 2.5px solid #2196f3 !important;
+ }
+/* custome text field input style override */
+
+
+
+
+
+
+
+
+
+/* custome radio button style override */
+input[type="radio"]:before, .radio input[type="radio"]:before, 
+.radio-inline input[type="radio"]:before, 
+input[type="radio"]:after, .radio input[type="radio"]:after, 
+.radio-inline input[type="radio"]:after {
+  transition: none !important;
+}
+
+input[type=radio]:checked::after {
+    animation: pulse_radio 1s 1 forwards;
+}
+input[type=checkbox]:checked::after {
+    animation: pulse_check 1s 1;
+}
+
+@keyframes pulse_radio {
+  0% {
+    background:#2196f3;
+    -moz-box-shadow: 0 0 0 0 rgba(33,150,243, 0.7);
+    box-shadow: 0 0 0 0 rgba(33,150,243, 0.7);
+  }
+  70% {
+       background:#2196f3;
+      -moz-box-shadow: 0 0 0 10px rgba(33,150,243, 0);
+      box-shadow: 0 0 0 10px rgba(33,150,243, 0);
+  }
+  100% {
+       background:#2196f3;
+      -moz-box-shadow: 0 0 0 0 rgba(33,150,243, 0);
+      box-shadow: 0 0 0 0 rgba(33,150,243, 0);
+  }
+}
+
+@keyframes pulse_check {
+  0% {
+    background:#2196f3;
+    border-radius: 0%;
+    -moz-box-shadow: 0 0 0 0 rgba(33,150,243, 0.7);
+    box-shadow: 0 0 0 0 rgba(33,150,243, 0.7);
+  }
+  70% {
+       background:#2196f3;
+       border-radius: 50%;
+      -moz-box-shadow: 0 0 0 10px rgba(33,150,243, 0);
+      box-shadow: 0 0 0 10px rgba(33,150,243, 0);
+  }
+  100% {
+       background:#2196f3;
+       border-radius: 0%;
+      -moz-box-shadow: 0 0 0 0 rgba(33,150,243, 0);
+      box-shadow: 0 0 0 0 rgba(33,150,243, 0);
+  }
+}
+
+.radio-inline+.radio-inline, 
+.checkbox-inline+.checkbox-inline,
+.checkbox-inline+.checkbox-inline, 
+.radio-inline+.radio-inline{
+  margin-left: 0 !important;
+}
+/* custome radio button style override */
+
+
+
+
+
+
+
+
+
+/* Mobile responsive design code  */
+@media screen and (max-width: 995px){
+          .formeo{
+            min-width: 97%;
+
+          }
+      }
+@media screen and (max-width: 415px){
+          .formeo{
+            min-width: 97%;
+
+          }
+      }      
+
+@media screen and (max-width: 376px){
+          .formeo{
+            min-width: 97%;
+
+          }
+      }
+
+@media screen and (max-width: 325px){
+          .formeo{
+            min-width: 97%;
+
+          }
+      }
+/* Mobile responsive design code  */
+
+
+/* Safari browsers only!! */
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ 
+    @media {
+    input[type="checkbox"]:after, .checkbox input[type="checkbox"]:after, 
+    .checkbox-inline input[type="checkbox"]:after{
+      margin-right:0.5rem;
+    }
+}
+}
